@@ -7,16 +7,19 @@
 C_SRCS += \
 ../user_app/task1.c \
 ../user_app/task2.c \
+../user_app/task3.c \
 ../user_app/user_app_main.c 
 
 OBJS += \
 ./user_app/task1.o \
 ./user_app/task2.o \
+./user_app/task3.o \
 ./user_app/user_app_main.o 
 
 C_DEPS += \
 ./user_app/task1.d \
 ./user_app/task2.d \
+./user_app/task3.d \
 ./user_app/user_app_main.d 
 
 
@@ -27,7 +30,7 @@ user_app/%.o user_app/%.su user_app/%.cyclo: ../user_app/%.c user_app/subdir.mk
 clean: clean-user_app
 
 clean-user_app:
-	-$(RM) ./user_app/task1.cyclo ./user_app/task1.d ./user_app/task1.o ./user_app/task1.su ./user_app/task2.cyclo ./user_app/task2.d ./user_app/task2.o ./user_app/task2.su ./user_app/user_app_main.cyclo ./user_app/user_app_main.d ./user_app/user_app_main.o ./user_app/user_app_main.su
+	-$(RM) ./user_app/task1.cyclo ./user_app/task1.d ./user_app/task1.o ./user_app/task1.su ./user_app/task2.cyclo ./user_app/task2.d ./user_app/task2.o ./user_app/task2.su ./user_app/task3.cyclo ./user_app/task3.d ./user_app/task3.o ./user_app/task3.su ./user_app/user_app_main.cyclo ./user_app/user_app_main.d ./user_app/user_app_main.o ./user_app/user_app_main.su
 
 .PHONY: clean-user_app
 

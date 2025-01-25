@@ -31,4 +31,5 @@
 "./ThirdParty/FreeRTOS/portable/MemMang/heap_4.o"
 "./user_app/task1.o"
 "./user_app/task2.o"
+"./user_app/task3.o"
 "./user_app/user_app_main.o"
